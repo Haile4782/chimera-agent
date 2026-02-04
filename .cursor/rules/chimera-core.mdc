@@ -1,0 +1,9 @@
+---
+description: Prime Directive for Project Chimera
+globs: **/*.py
+---
+# Project Chimera Rules
+- **Prime Directive**: NEVER generate code without checking `specs/` first.
+- **Traceability**: You must explain which requirement from the SRS you are fulfilling before writing a function.
+- **TDD**: Always suggest a failing test in `tests/` before writing the implementation.
+- **Agentic Logic**: Distinguish between "Skills" (internal scripts) and "MCP Tools" (external bridges).

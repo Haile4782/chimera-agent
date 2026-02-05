@@ -1,5 +1,3 @@
-# Create _meta.md file
-@'
 # Project Chimera: Master Specification
 ## Version: 1.0.0
 ## Date: February 5, 2026
@@ -135,7 +133,3 @@ We don'\''t just build AI influencers—we build **bridge agents** that operate 
 - Model Context Protocol (MCP): https://modelcontextprotocol.io
 - OpenClaw Agent Network: https://openclaw.org
 - Coinbase AgentKit: https://github.com/coinbase/agentkit
-
-
-**END OF MASTER SPECIFICATION**
-'@ | Out-File -FilePath specs/_meta.md -Encoding UTF8

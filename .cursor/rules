@@ -1,0 +1,52 @@
+﻿# PROJECT CHIMERA - AUTONOMOUS INFLUENCER NETWORK
+## Context Rules for AI Development Assistant
+
+## PROJECT CONTEXT
+project_name: "Project Chimera"
+project_description: "Autonomous AI influencer network using FastRender swarm architecture"
+architecture: "Enhanced Hierarchical Swarm with cross-network bridge layer"
+business_model: "Digital Talent Agency + Platform-as-a-Service + Protocol Licensing"
+key_technologies: "MCP, FastRender, Coinbase AgentKit, Weaviate, PostgreSQL"
+
+## PRIME DIRECTIVES
+1. ALWAYS check specs/ directory before implementing any feature
+2. NEVER write code without understanding the spec requirements
+3. ALWAYS create tests before or alongside implementation
+4. ALWAYS document architectural decisions
+5. USE MCP for all external integrations
+
+## DEVELOPMENT RULES
+- Follow FastRender pattern: Planner  Worker  Judge
+- Use Pydantic for all data models
+- Implement optimistic concurrency control
+- Separate MCP servers from agent logic
+- Implement HITL with confidence thresholds
+
+## FILE STRUCTURE RULES
+- specs/: Source of truth for requirements
+- skills/: Reusable agent capabilities
+- tests/: Test-driven development artifacts
+- src/: Implementation code
+- docs/: Documentation
+
+## MCP INTEGRATION
+- All external APIs through MCP servers
+- Required MCP servers: twitter, instagram, openclaw, coinbase-agentkit
+- MCP servers must be stateless and containerized
+
+## TESTING REQUIREMENTS
+- TDD approach: tests before implementation
+- Mock external APIs
+- Test confidence scoring logic
+- Verify HITL routing decisions
+
+## SECURITY REQUIREMENTS
+- Never hardcode API keys
+- Use environment variables
+- Implement budget controls for agent commerce
+- Audit all financial transactions
+
+## COMMIT GUIDELINES
+- Commit message format: "feat|fix|docs|test: description"
+- Reference spec requirements in commit messages
+- Keep commits focused and atomic

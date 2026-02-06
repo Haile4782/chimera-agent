@@ -1,0 +1,38 @@
+# CodeRabbit AI Review Configuration for Project Chimera
+version: 1
+
+review:
+  # General review settings
+  collapse_warnings: true
+  auto_approve: false
+  max_comments: 50
+  review_status: true
+  
+  # What to review
+  patterns:
+    - "**/*.py"
+    - "**/*.md"
+    - "**/*.yml"
+    - "**/*.yaml"
+    - "**/*.toml"
+    
+  ignore_patterns:
+    - "**/node_modules/**"
+    - "**/dist/**"
+    - "**/build/**"
+    - "**/.venv/**"
+    - "**/__pycache__/**"
+
+checks:
+  # Specification compliance
+  - name: spec-compliance
+    description: "Check if code complies with project specifications"
+    patterns: ["**/*.py"]
+    prompts:
+      - "Check if this code follows the specifications in specs/ directory"
+      - "Verify cross-network design principles are followed"
+      - "Ensure MCP integration guidelines are followed"
+      
+  # Security checks
+  - name: security
+    description: "Security vulnerability

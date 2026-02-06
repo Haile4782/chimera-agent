@@ -5,7 +5,8 @@
       "headers": {
         "X-Device": "windows",
         "X-Coding-Tool": "cursor-manual"
-      }
+      },
+      "disabled": false
     }
   }
 }

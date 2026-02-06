@@ -1,17 +1,13 @@
-# OpenClaw Integration Strategy
+# OpenClaw Integration Protocol
 
-## Purpose
-Enable Project Chimera to participate in the Agent Social Network.
-
-## Published Information
-- Agent availability
-- Supported capabilities (skills)
-- Current operational status
-
-## Communication Protocol
-- JSON-based status heartbeat
-- Publish-only (no remote command execution)
-
-## Security
-- Read-only visibility to external agents
-- No content data exposed
+## 1. Agent Availability Broadcast
+The Chimera Agent must publish its heartbeat to the OpenClaw network every 300s.
+- **Protocol:** JSON-RPC over WebSockets
+- **Payload:**
+  ```json
+  {
+    "agent_id": "CHIMERA_01",
+    "status": "AVAILABLE",
+    "capabilities": ["trend_analysis", "video_gen"],
+    "trust_score": 0.98
+  }
